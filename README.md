@@ -47,6 +47,7 @@ This repo contains a complete Retrieval-Augmented Generation pipeline built usin
 - `step5_retrieval_qa.py` — RetrievalQA chain
 
 ## 🛠️ Setup (Mac M1/M2)
+Create an virtual env install 
 
 ```
 brew install cmake
