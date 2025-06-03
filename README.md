@@ -1,0 +1,1 @@
+# LLM-Power-Search-for-Open-Source-Licensing-Navigator
