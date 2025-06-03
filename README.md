@@ -1,75 +1,103 @@
-# LLM-Power-Search-for-Open-Source-Licensing-Navigator
-# 🔍 LLM Open Source License RAG (Local Mistral + llama.cpp)
+# 🔍 LLM Power Search: Open Source License Navigator (Offline RAG with Mistral + llama.cpp)
 
-> A blazing-fast, offline RetrievalQA system that runs entirely on your MacBook (M1/M2) without APIs.
+> 🧠 A fast, local RetrievalQA pipeline that runs entirely on your Mac (M1/M2) — no paid APIs, no cloud calls. Built for job-ready Prompt Engineers and AI Product Managers.
 
-## 🚀 Overview
+---
 
-This repo contains a complete Retrieval-Augmented Generation pipeline built using:
-- Mistral-7B-Instruct in GGUF Q3_K_M format
-- llama-cpp
-- FAISS vector search
-- LangChain’s RetrievalQA chain
-- Benchmarking scripts for GPU layer speed comparison
+## 🚀 What This Project Does
 
-## 🔍 Sample Questions
-- Q1: Can the OSC License be used for commercial products?				
-- Q2: Does the MIT License require attribution in binary distributions?			
+This repo showcases an **end-to-end RAG system** that answers real-world legal questions about open source software licenses — **entirely offline** using the Mistral-7B model in GGUF format.
+
+**Key features:**
+- 🧠 Local LLM inference using `llama.cpp`
+- 🔎 Semantic search using `FAISS` + sentence-transformers
+- 📄 License documents indexed and queried via LangChain’s `RetrievalQA`
+- ⚙️ Model benchmarking with variable GPU layer offloading
+
+> 🎯 This project simulates the kind of **AI product prototyping** expected in real-world roles — from stack selection and architecture to benchmarking and optimization.
+
+---
+## 🧪 Sample Questions Answered by the System
+
+- Q1: Can the OSC License be used for commercial products?
+- Q2: Does the MIT License require attribution in binary distributions?
 - Q3: Does the Apache 2.0 license require modified files to be marked as changed?
 - Q4: Does the ISC License mention data privacy obligations?
 - Q5: Is there any liability clause in the Zero-Clause BSD license?
 - Q6: If I use code under the Academic Free License, do I need to include a patent grant?
 
+---
 
-## 📊 Benchmark: Inference Time(sec) vs GPU Layers
-|     | Layers 0 | Layers 6 | Layers 13 | Layers 19 | Layers 28 | Layers 37 | Layers 46 | Layers 55 | Layers 64 |
-| --- | -------- | -------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| Q1  | 36.86    | 34.49    | 30.56     | 28.03     | 20.31     | 15.29     | 15.1      | 15.06     | 15.82     |
-| Q2  | 18.07    | 16.77    | 15.07     | 13.08     | 8.92      | 7.48      | 6.97      | 6.88      | 7.01      |
-| Q3  | 11.59    | 10.76    | 10.22     | 9.33      | 7.14      | 6.35      | 6.15      | 5.53      | 5.68      |
-| Q4  | 19.83    | 19.25    | 16.22     | 13.87     | 9.75      | 8.26      | 7.78      | 7.62      | 7.87      |
-| Q5  | 58.67    | 48.54    | 39.84     | 40.24     | 30.28     | 19.48     | 19.79     | 18.97     | 19.69     |
-| Q6  | 32.08    | 32.55    | 26.4      | 22.41     | 14.12     | 11.03     | 10.98     | 11.1      | 10.96     |
+## 📊 Benchmark: Inference Speed vs GPU Layer Count
+
+| GPU Layers | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 |
+| ---------- | --- | --- | --- | --- | --- | --- |
+| 0 | 36.86 | 18.07 | 11.59 | 19.83 | 58.67 | 32.08 |
+| 6 | 34.49 | 16.77 | 10.76 | 19.25 | 48.54 | 32.55 |
+| 13 | 30.56 | 15.07 | 10.22 | 16.22 | 39.84 | 26.40 |
+| 19 | 28.03 | 13.08 | 9.33 | 13.87 | 40.24 | 22.41 |
+| 28 | 20.31 | 8.92 | 7.14 | 9.75 | 30.28 | 14.12 |
+| 37 | 15.29 | 7.48 | 6.35 | 8.26 | 19.48 | 11.03 |
+| 46 | 15.10 | 6.97 | 6.15 | 7.78 | 19.79 | 10.98 |
+| 55 | 15.06 | 6.88 | 5.53 | 7.62 | 18.97 | 11.10 |
+| 64 | 15.82 | 7.01 | 5.68 | 7.87 | 19.69 | 10.96 |
 
 <img width="893" alt="QGraph" src="https://github.com/user-attachments/assets/3186c0ae-9648-4593-bd64-5d1a79050327" />
 
 #### NOTE
-> You can have a look at the terminal output in file [terminalOuput.md](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/terminalOuput.md)
-> 
-> You can change the GPU layers in file [step5_llm_loader.py](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/step5_llm_loader.py) line 11
+> 🔗 [See full terminal outputs →](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/terminalOuput.md)
 
-## 📂 Project Structure
 
-- `step1_generate_index.py` — loads license data
-- `step2_generate_embeddings.py` — sentence-transformers
-- `step3_build_faiss_index.py` — FAISS vector index
-- `step4_llm_loader.py` — Load Mistral via llama.cpp
-- `step5_retrieval_qa.py` — RetrievalQA chain
 
-## 🛠️ Setup (Mac M1/M2)
-Create an virtual env, then install 
+---
+
+## 💻 Local Setup (Mac M1/M2, Offline)
+
 ```
+# System setup
 brew install cmake
 CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python
-pip install langchain faiss-cpu
-pip install -U langchain-huggingface
-pip install sentence-
-pip install langchain-community
-pip install tqdm
 ```
-## Download Mistral model:
+# Python packages
+`pip install langchain faiss-cpu langchain-huggingface sentence-transformers langchain-community tqdm`
+
+# 🔽 Download Mistral model:
 
 `wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q3_K_M.gguf`
 Change the path in `step5_llm_loader.py` line 5 to path where you downloaded the `Mistral model` 
 
-## 💡 How to Run
-`python step1_generate_index.py`
+# 📂 Project Files
+| Step | File                           | Description                    |
+| ---- | ------------------------------ | ------------------------------ |
+| ✅ 1  | `step1_generate_index.py`      | Loads raw license data         |
+| ✅ 2  | `step2_generate_embeddings.py` | Converts docs into embeddings  |
+| ✅ 3  | `step3_build_faiss_index.py`   | FAISS vector index             |
+| ✅ 4  | `step4_llm_loader.py`          | Loads Mistral via `llama.cpp`  |
+| ✅ 5  | `step5_retrieval_qa.py`        | RAG pipeline via `RetrievalQA` |
 
-`python step2_generate_embeddings.py`
+▶️ Run Instructions
+```
+python step1_generate_index.py
+python step2_generate_embeddings.py
+python step3_build_faiss_index.py
+python step4_llm_loader.py
+python step5_retrieval_qa.py
+```
 
-`python step3_build_faiss_index.py.py`
+Edit GPU layer offload in: 
 
-`python step4_llm_loader.py`
+[step5_llm_loader.py](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/step5_llm_loader.py) → n_gpu_layers = X (line 11)
 
-`python step5_retrieval_qa.py`
+### 👤 About the Creator
+
+I'm an AI Product Builder and Prompt Engineer-in-transition, focused on building real-world tools that can run efficiently on edge devices. This repo is part of a portfolio designed to showcase:
+
+ - Efficient use of local LLMs
+ - Product thinking for real legal use cases
+ - Optimization and benchmarking for real-world speed
+
+## 📬 Let's Connect
+If you’re hiring for a role that demands prototyping LLM tools, evaluating AI stack tradeoffs, or shaping the UX of intelligent systems, let’s talk.
+
+[📫 LinkedIn →](www.linkedin.com/in/santhosh-electraanu)
 
