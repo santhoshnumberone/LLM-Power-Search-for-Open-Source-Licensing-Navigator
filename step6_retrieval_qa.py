@@ -1,5 +1,5 @@
-from step8_llm_loader import load_llm
-from step7_load_faiss_index import load_faiss_index
+from step5_llm_loader import load_llm
+from step4_load_faiss_index import load_faiss_index
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import time
