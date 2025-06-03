@@ -56,6 +56,7 @@ pip install tqdm
 ## Download Mistral model:
 
 `wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q3_K_M.gguf`
+Change the path in `step5_llm_loader.py` line 5 to path where you downloaded the `Mistral model` 
 
 ## 💡 How to Run
 `python step1_generate_index.py`
