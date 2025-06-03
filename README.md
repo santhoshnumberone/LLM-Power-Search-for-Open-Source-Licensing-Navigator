@@ -72,8 +72,9 @@ Change the path in `step5_llm_loader.py` line 5 to path where you downloaded the
 | ✅ 1  | `step1_generate_index.py`      | Loads raw license data         |
 | ✅ 2  | `step2_generate_embeddings.py` | Converts docs into embeddings  |
 | ✅ 3  | `step3_build_faiss_index.py`   | FAISS vector index             |
-| ✅ 4  | `step4_llm_loader.py`          | Loads Mistral via `llama.cpp`  |
-| ✅ 5  | `step5_retrieval_qa.py`        | RAG pipeline via `RetrievalQA` |
+| ✅ 4  | `step3_load_faiss_index.py`   | load FAISS vector index        |
+| ✅ 5  | `step4_llm_loader.py`          | Loads Mistral via `llama.cpp`  |
+| ✅ 6  | `step5_retrieval_qa.py`        | RAG pipeline via `RetrievalQA` |
 
 ▶️ Run Instructions
 ```
