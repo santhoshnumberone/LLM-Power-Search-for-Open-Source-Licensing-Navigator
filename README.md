@@ -12,6 +12,15 @@ This repo contains a complete Retrieval-Augmented Generation pipeline built usin
 - LangChain’s RetrievalQA chain
 - Benchmarking scripts for GPU layer speed comparison
 
+## 🔍 Sample Questions
+- Q1: Can the OSC License be used for commercial products?				
+- Q2: Does the MIT License require attribution in binary distributions?			
+- Q3: Does the Apache 2.0 license require modified files to be marked as changed?
+- Q4: Does the ISC License mention data privacy obligations?
+- Q5: Is there any liability clause in the Zero-Clause BSD license?
+- Q6: If I use code under the Academic Free License, do I need to include a patent grant?
+
+
 ## 📊 Benchmark: Inference Time(sec) vs GPU Layers
 |     | Layers 0 | Layers 6 | Layers 13 | Layers 19 | Layers 28 | Layers 37 | Layers 46 | Layers 55 | Layers 64 |
 | --- | -------- | -------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -21,6 +30,10 @@ This repo contains a complete Retrieval-Augmented Generation pipeline built usin
 | Q4  | 19.83    | 19.25    | 16.22     | 13.87     | 9.75      | 8.26      | 7.78      | 7.62      | 7.87      |
 | Q5  | 58.67    | 48.54    | 39.84     | 40.24     | 30.28     | 19.48     | 19.79     | 18.97     | 19.69     |
 | Q6  | 32.08    | 32.55    | 26.4      | 22.41     | 14.12     | 11.03     | 10.98     | 11.1      | 10.96     |
+
+<img width="893" alt="QGraph" src="https://github.com/user-attachments/assets/3186c0ae-9648-4593-bd64-5d1a79050327" />
+
+
 ## 📂 Project Structure
 
 - `step1_generate_index.py` — loads license data
@@ -45,16 +58,13 @@ pip install tqdm
 `wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q3_K_M.gguf`
 
 ## 💡 How to Run
-`python step1_generate_index.py` 
+`python step1_generate_index.py`
+
 `python step2_generate_embeddings.py`
+
 `python step3_build_faiss_index.py.py`
+
 `python step4_llm_loader.py`
+
 `python step5_retrieval_qa.py`
 
-## 🔍 Sample Questions
-- Can the OSC License be used for commercial products?				
-- Does the MIT License require attribution in binary distributions?			
-- Does the Apache 2.0 license require modified files to be marked as changed?
-- Does the ISC License mention data privacy obligations?
-- Is there any liability clause in the Zero-Clause BSD license?
-- If I use code under the Academic Free License, do I need to include a patent grant?
