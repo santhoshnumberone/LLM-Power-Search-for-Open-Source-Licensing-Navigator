@@ -1,0 +1,42 @@
+
+{
+  "license_name": "Common Development and Distribution License",
+  "version": "1.0",
+  "approved_by": "OSI",
+  "permissions": [
+    "use",
+    "reproduce",
+    "modify",
+    "display",
+    "perform",
+    "sublicense",
+    "distribute",
+    "make",
+    "sell",
+    "offer for sale",
+    "have made",
+    "otherwise dispose of"
+  ],
+  "conditions": [
+    "distribute source code of Covered Software under the same license",
+    "include a copy of this License with all source code distributions",
+    "inform recipients how to obtain source code in a reasonable manner",
+    "include contributor identification notices in modifications",
+    "do not remove or alter copyright, patent, trademark, or licensing notices",
+    "do not impose additional license terms on source code that restrict the license",
+    "indicate differences and additions in modifications",
+    "if distributing Executable form under a different license, must not limit recipients' rights in source code form",
+    "comply with license terms to avoid termination",
+    "indemnify Initial Developer and Contributors for any warranty or liability terms offered on your behalf"
+  ],
+  "limitations": [
+    "software provided 'as is' without warranty of any kind",
+    "no liability for damages including indirect, special, incidental, or consequential damages",
+    "patent license excludes deleted code and patent infringements caused by modification or combination with other software",
+    "license terminates if you fail to comply or assert patent claims against Initial Developer or Contributors",
+    "surviving licenses prior to termination remain valid"
+  ],
+  "canonical_language": "English",
+  "english_translation": true,
+  "url": "https://opensource.org/license/cddl-1-0"
+}

@@ -1,0 +1,36 @@
+{
+  "license_name": "Adaptive Public License",
+  "version": "1.0",
+  "approved_by": "OSI",
+  "permissions": [
+    "use",
+    "copy",
+    "modify",
+    "merge",
+    "publish",
+    "distribute",
+    "sublicense",
+    "create derivative works"
+  ],
+  "conditions": [
+    "include LICENSE file in all copies or substantial portions",
+    "provide proper attribution to Initial Contributor",
+    "define governing jurisdiction",
+    "select and define Third Party scope",
+    "accept license terms by use or distribution",
+    "provide notice of licensed work and license terms",
+    "no warranty provided",
+    "patent license granted only if explicitly selected",
+    "document modifications encouraged"
+  ],
+  "limitations": [
+    "no warranty, express or implied",
+    "no patent license unless explicitly granted",
+    "patent license terminates upon patent litigation between recipients",
+    "no license for deleted or separate code",
+    "license termination requires proper notice"
+  ],
+  "canonical_language": "English",
+  "english_translation": true,
+  "url": "https://opensource.org/license/apl1-0-php"
+}

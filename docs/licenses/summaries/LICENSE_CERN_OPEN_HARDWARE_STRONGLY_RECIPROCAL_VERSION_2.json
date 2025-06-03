@@ -1,0 +1,32 @@
+{
+  "license_name": "CERN Open Hardware Licence - Strongly Reciprocal",
+  "version": "2.0",
+  "approved_by": "OSI",
+  "permissions": [
+    "use",
+    "copy",
+    "modify",
+    "convey",
+    "make"
+  ],
+  "conditions": [
+    "retain all notices when copying",
+    "make modified source available when conveying",
+    "add modification notices with date and description",
+    "license modified source under CERN-OHL-S or later compatible version",
+    "provide complete source or source location when conveying products",
+    "display source location on product if specified",
+    "do not restrict rights granted under the license to other licensees",
+    "comply with license terms to avoid termination"
+  ],
+  "limitations": [
+    "provided 'as is' without warranty",
+    "no liability for damages from use or conveyance",
+    "patent license terminates if patent litigation is initiated",
+    "cannot use licensor's name or logo except as allowed",
+    "license terminates immediately upon breach"
+  ],
+  "canonical_language": "English",
+  "english_translation": true,
+  "url": "https://opensource.org/license/cern-ohl-s"
+}

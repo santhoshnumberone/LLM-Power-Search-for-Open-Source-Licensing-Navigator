@@ -1,0 +1,30 @@
+{
+  "license_name": "Apache License",
+  "version": "2.0",
+  "approved_by": "OSI",
+  "permissions": [
+    "use",
+    "reproduction",
+    "distribution",
+    "preparation of derivative works",
+    "public display",
+    "public performance",
+    "sublicensing"
+  ],
+  "conditions": [
+    "provide a copy of the license to recipients",
+    "include prominent notices of file changes in modified files",
+    "retain all copyright, patent, trademark, and attribution notices in source form",
+    "include NOTICE file attribution notices in derivative works where applicable",
+    "add own attribution notices in derivative works without modifying the license"
+  ],
+  "limitations": [
+    "no warranty of any kind",
+    "no liability for damages",
+    "trademark use not permitted except for describing origin",
+    "patent license terminates if patent litigation is initiated"
+  ],
+  "canonical_language": "English",
+  "english_translation": true,
+  "url": "https://opensource.org/license/apache-2-0"
+}

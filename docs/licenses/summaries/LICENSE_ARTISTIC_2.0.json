@@ -1,0 +1,41 @@
+{
+  "license_name": "Artistic License",
+  "version": "2.0",
+  "approved_by": "OSI",
+  "steward": "The Perl and Raku Foundation",
+  "permissions": [
+    "copy verbatim license document",
+    "use Standard Version without restriction",
+    "create and use Modified Versions without distribution",
+    "distribute Standard Version source verbatim with notices",
+    "apply bug fixes and portability changes from Copyright Holder",
+    "distribute Modified Versions as Source with conditions",
+    "distribute Compiled forms of Standard or Modified Versions with source or instructions",
+    "aggregate or link the Package with other works without licensing fee for the Package",
+    "link or embed Package in larger works without exposing direct interface"
+  ],
+  "conditions": [
+    "distribute verbatim license document unmodified",
+    "document modifications clearly for Modified Versions",
+    "Modified Version must meet at least one of three conditions regarding sharing with Copyright Holder, install compatibility, or license terms",
+    "include instructions to get source if distributing compiled Standard Version without source",
+    "comply with source distribution rules for compiled Modified Versions",
+    "no licensing fees charged for the Package in aggregations (Distributor Fees allowed)",
+    "accept license to use, modify, or distribute",
+    "trademark and logo use not granted",
+    "patent license granted but terminates if patent litigation initiated"
+  ],
+  "limitations": [
+    "no warranty or liability for damages",
+    "license terminates on patent litigation claims",
+    "works merely extending or using the Package are not considered Modified Versions"
+  ],
+  "definitions": {
+    "Standard Version": "Package as distributed by Copyright Holder or with requested changes only",
+    "Modified Version": "Package changed beyond those requested by Copyright Holder",
+    "Distributor Fee": "Fee charged for distributing or supporting the Package (not licensing fees)",
+    "Source form": "Source code, documentation, configuration files",
+    "Compiled form": "Binary, bytecode, or mechanical transformation of Source"
+  },
+  "url": "https://opensource.org/license/artistic-2-0"
+}
