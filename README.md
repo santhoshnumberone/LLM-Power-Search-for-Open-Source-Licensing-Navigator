@@ -33,6 +33,7 @@ This repo contains a complete Retrieval-Augmented Generation pipeline built usin
 
 <img width="893" alt="QGraph" src="https://github.com/user-attachments/assets/3186c0ae-9648-4593-bd64-5d1a79050327" />
 
+You can have a look at the terminal output in file [terminalOuput.md](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/terminalOuput.md)
 
 ## 📂 Project Structure
 
