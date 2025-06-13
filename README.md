@@ -14,8 +14,6 @@ This repo showcases an **end-to-end RAG system** that answers real-world legal q
 - 📄 License documents indexed and queried via LangChain’s `RetrievalQA`
 - ⚙️ Model benchmarking with variable GPU layer offloading
 
-> 🎯 This project simulates the kind of **AI product prototyping** expected in real-world roles — from stack selection and architecture to benchmarking and optimization.
-
 ---
 ## 🧪 Sample Questions Answered by the System
 
