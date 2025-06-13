@@ -1,6 +1,6 @@
 # 🔍 LLM Power Search: Open Source License Navigator (Offline RAG with Mistral + llama.cpp)
 
-> 🧠 A fast, local RetrievalQA pipeline that runs entirely on your Mac (M1/M2) — no paid APIs, no cloud calls. Built for job-ready Prompt Engineers and AI Product Managers.
+> 🧠 A fast, local RetrievalQA pipeline that runs entirely on your Mac (M1/M2) — no paid APIs, no cloud calls.
 
 ---
 
