@@ -88,6 +88,10 @@ Edit GPU layer offload in:
 
 [step5_llm_loader.py](https://github.com/santhoshnumberone/LLM-Power-Search-for-Open-Source-Licensing-Navigator/blob/main/step5_llm_loader.py) → n_gpu_layers = X (line 11)
 
+## 🛡 License
+
+This project is open-source under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
 ### 👤 About the Creator
 
 I'm an AI Product Builder and Prompt Engineer-in-transition, focused on building real-world tools that can run efficiently on edge devices. This repo is part of a portfolio designed to showcase:
@@ -100,4 +104,3 @@ I'm an AI Product Builder and Prompt Engineer-in-transition, focused on building
 If you’re hiring for a role that demands prototyping LLM tools, evaluating AI stack tradeoffs, or shaping the UX of intelligent systems, let’s talk.
 
 [📫 LinkedIn →](www.linkedin.com/in/santhosh-electraanu)
-
